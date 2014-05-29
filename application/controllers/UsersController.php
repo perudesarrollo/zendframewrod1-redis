@@ -11,7 +11,10 @@ class UsersController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
-        $this->view->users = array('name'=>'Max Palomino', 'email'=> 'email@gmail.com','web' => 'http://we.pe','status'=>1);
+        $this->view->users = array(
+        array('id'=>1,'name'=>'Max Palomino', 'email'=> 'email@gmail.com','web' => 'http://we.pe','status'=>1),
+        array('id'=>2,'name'=>'Max Palomino', 'email'=> 'email@gmail.com','web' => 'http://we.pe','status'=>1)
+        );
     }
 
     public function nuevoAction()
